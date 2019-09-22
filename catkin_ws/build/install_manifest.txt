@@ -1,0 +1,13 @@
+/home/stefan/catkin_ws/install/_setup_util.py
+/home/stefan/catkin_ws/install/env.sh
+/home/stefan/catkin_ws/install/setup.bash
+/home/stefan/catkin_ws/install/local_setup.bash
+/home/stefan/catkin_ws/install/setup.sh
+/home/stefan/catkin_ws/install/local_setup.sh
+/home/stefan/catkin_ws/install/setup.zsh
+/home/stefan/catkin_ws/install/local_setup.zsh
+/home/stefan/catkin_ws/install/.rosinstall
+/home/stefan/catkin_ws/install/lib/pkgconfig/beginner_tutorials.pc
+/home/stefan/catkin_ws/install/share/beginner_tutorials/cmake/beginner_tutorialsConfig.cmake
+/home/stefan/catkin_ws/install/share/beginner_tutorials/cmake/beginner_tutorialsConfig-version.cmake
+/home/stefan/catkin_ws/install/share/beginner_tutorials/package.xml
