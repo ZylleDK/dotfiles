@@ -1,2 +1,2 @@
-beginner_tutorials
+au_crustcrawler_base:beginner_tutorials:dynamixel_motor/dynamixel_controllers:dynamixel_motor/dynamixel_driver:dynamixel_motor/dynamixel_motor:dynamixel_motor/dynamixel_msgs:dynamixel_motor/dynamixel_tutorials:final_project:quickui:single_motor
 -DCATKIN_DEVEL_PREFIX=/home/stefan/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/stefan/catkin_ws/install -G Unix Makefiles
