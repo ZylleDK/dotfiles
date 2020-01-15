@@ -19,6 +19,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -47,14 +48,14 @@ nnoremap <C-H> <C-W><C-H>
 
 " Enable code folding
 set foldmethod=indent
-set foldlevel=99
+set foldlevel=0
 " Fold and unfold using the space-bar
 nnoremap <space> za
+let g:SimplyFold_docstring_preview=1
 
 " Close auto-complete window after use
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_collect_identifiers_from_tags_files=1
-let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 
 
 " Nerdtree setup
@@ -63,4 +64,4 @@ map <C-t> :NERDTreeToggle<CR>
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<C-c>"
+let g:UltiSnipsExpandTrigger="<C-q>"
