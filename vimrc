@@ -49,8 +49,9 @@ let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_collect_identifiers_from_tags_files=1
 
 " Nerdtree setup
-map <C-o> :NERDTreeToggle<CR>
+map <silent><C-o> :NERDTreeToggle<CR>
 " Hide .pyc files from file tree
+let NERDTreeQuitOnOpen=1
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
@@ -61,7 +62,7 @@ if !exists('g:airline_symbols')
 endif
 
 " vim-airline setup
-let g:airline_theme = 'dark_minimal'
+let g:airline_theme = 'angr'
 
 let g:airline_powerline_fonts = 1
 " unicode symbols
