@@ -99,3 +99,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /opt/ros/melodic/setup.zsh
 source ~/catkin_ws/devel/setup.zsh
+
+export GOPATH=$HOME/go:$HOME/projects
