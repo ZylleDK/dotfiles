@@ -39,10 +39,6 @@ set nu
 set background=dark
 hi Comment ctermfg=LightGreen
 
-" Setup split window order
-set splitright
-set splitbelow
-
 " Close auto-complete window after use
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_collect_identifiers_from_tags_files=1
