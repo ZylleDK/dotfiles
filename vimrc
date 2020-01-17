@@ -40,26 +40,8 @@ set background=dark
 hi Comment ctermfg=LightGreen
 
 " Setup split window order
-set splitbelow
 set splitright
-
-" Split navigations:
-"<CTRL>+J --> Move to the split below
-"<CTRL>+K --> Move to the split above
-"<CTRL>+L --> Move to the split to the right
-"<CTRL>+H --> Move to the split to the left
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
-" Enable folding
-set foldmethod=indent
-set foldlevel=0
-
-" Fold and unfold using the space-bar
-nnoremap <space> za
-let g:SimplyFold_docstring_preview=1
+set splitbelow
 
 " Close auto-complete window after use
 let g:ycm_autoclose_preview_window_after_completion=1
