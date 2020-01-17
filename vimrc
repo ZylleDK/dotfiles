@@ -25,7 +25,7 @@ Plugin 'benmills/vimux'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-
+Plugin 'morhetz/gruvbox'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -36,8 +36,13 @@ set encoding=utf-8
 set fileencoding=utf-8
 set nu
 
+colorscheme gruvbox
 set background=dark
-hi Comment ctermfg=LightGreen
+let g:gruvbox_contrast='hard'
+let g:gruvbox_contrast_dark='hard'
+
+set splitright
+set splitbelow
 
 " Close auto-complete window after use
 let g:ycm_autoclose_preview_window_after_completion=1
