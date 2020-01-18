@@ -38,7 +38,6 @@ set nu
 
 colorscheme gruvbox
 set background=dark
-let g:gruvbox_contrast='hard'
 let g:gruvbox_contrast_dark='hard'
 
 set splitright
@@ -55,8 +54,9 @@ let NERDTreeQuitOnOpen=1
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<C-q>"
+let g:UltiSnipsExpandTrigger="<C-j>"
 
+"Airline setup
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif

@@ -55,14 +55,24 @@ if has("patch-8.1.1904")
   set completepopup=align:menu,border:off,highlight:Pmenu
 endif
 
+"Set up tab-indentation
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=2
+" when indenting with '>', use 4 spaces width
+set shiftwidth=2
+" On pressing tab, insert 4 spaces
+set expandtab
+
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
-let g:go_def_mapping_enabled = 0
-
+let g:UltiUltiSnipsExpandTrigger="<C-j>"
 map <special><F4> :GoFmt<CR>
 imap <special><F4> <esc>:GoFmt<CR>
 map <special><F5> :call VimuxRunCommandInDir("go run", 1)<CR>
 imap <special><F5> <esc>:call VimuxRunCommandInDir("go run", 1)<CR>
 map <special><F6> :call VimuxRunCommandInDir("go build", 1)<CR>
 imap <special><F6> <esc>:call VimuxRunCommandInDir("go build", 1)<CR>
+map <special><F12> :call VimuxRunCommandInDir("git merge ", 0)
+imap <special><F12> <esc>:call VimuxRunCommandInDir("git merge ", 0)
 nmap <special><Delete> :call VimuxCloseRunner()<CR>
