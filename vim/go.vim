@@ -67,12 +67,11 @@ set expandtab
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 let g:UltiUltiSnipsExpandTrigger="<C-j>"
-map <special><F4> :GoFmt<CR>
-imap <special><F4> <esc>:GoFmt<CR>
-map <special><F5> :call VimuxRunCommandInDir("go run", 1)<CR>
-imap <special><F5> <esc>:call VimuxRunCommandInDir("go run", 1)<CR>
-map <special><F6> :call VimuxRunCommandInDir("go build", 1)<CR>
-imap <special><F6> <esc>:call VimuxRunCommandInDir("go build", 1)<CR>
+
+map <special><F3> :GoFmt<CR>
+imap <special><F3> <esc>:GoFmt<CR>
+map <special><F4> :call VimuxRunCommandInDir("go build", 0)<CR>
+imap <special><F4> <esc>:call VimuxRunCommandInDir("go build", 0)<CR>
 map <special><F12> :call VimuxRunCommandInDir("git merge ", 0)
 imap <special><F12> <esc>:call VimuxRunCommandInDir("git merge ", 0)
 nmap <special><Delete> :call VimuxCloseRunner()<CR>
